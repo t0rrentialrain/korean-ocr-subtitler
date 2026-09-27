@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Korean OCR Subtitler</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>🇰🇷 OCR Subtitler</h1>
+  <div id="notYoutube" class="hidden">
+    <p>Open a YouTube video (<code>youtube.com/watch?v=…</code>) to use this extension.</p>
+  </div>
+  <div id="controls" class="hidden">
+    <div class="row">
+      <span id="regionText">Region: —</span>
+      <span id="lineText">Lines: 0</span>
+    </div>
+    <button id="setRegion">🎯 Set Subtitle Region</button>
+    <div class="row">
+      <button id="start" class="primary">▶ Start</button>
+      <button id="stop">⏹ Stop</button>
+    </div>
+    <div class="row">
+      <button id="download">⬇ Export .srt</button>
+      <button id="clear" class="danger">🗑 Clear</button>
+    </div>
+    <div id="preview" class="preview"></div>
+    <p class="hint">The on-page panel (top-right of the video) has the same controls plus a live preview.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
