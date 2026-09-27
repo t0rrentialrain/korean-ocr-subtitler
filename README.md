@@ -1,4 +1,4 @@
-# Korean OCR Subtitle Extractor
+# Korean OCR Subtitler
 
 A Chrome extension that watches burned-in ("hardsubbed") Korean captions on a
 YouTube video and exports them as a timed `.srt` file — entirely locally,
@@ -25,8 +25,7 @@ can feed it into a normal subs2srs / Anki / translation pipeline afterward.
 
 1. Open `chrome://extensions`.
 2. Turn on **Developer mode** (top-right toggle).
-3. Click **Load unpacked** and select this folder
-   (`korean-ocr-subtitler/`).
+3. Click **Load unpacked** and select the cloned `korean-ocr-subtitler/` folder.
 4. Open any `https://www.youtube.com/watch?v=...` video. A small panel
    appears near the top-right of the page.
 
@@ -91,3 +90,9 @@ vendor/tesseract/           Tesseract.js + WASM core + kor.traineddata,
                             vendored locally so nothing is fetched at runtime
 icons/                      Extension icons
 ```
+
+## License
+
+MIT for this extension's code. The bundled [Tesseract.js](https://github.com/naptha/tesseract.js)
+files in `vendor/tesseract/` are Apache-2.0, and `kor.traineddata` comes from
+[tesseract-ocr/tessdata](https://github.com/tesseract-ocr/tessdata) (Apache-2.0).
